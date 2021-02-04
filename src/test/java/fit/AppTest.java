@@ -1,14 +1,19 @@
 package fit;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
 
 import fit.core.AttendanceHelper;
+import fit.core.ListUtils;
 
 /**
  * Unit test for simple App.
@@ -18,7 +23,7 @@ public class AppTest {
 	/**
      * validate if class can sort an regular array
      */
-/*    @Test
+    @Test
     public void shouldSortList() {
         // arrange
         List<String> names = new ArrayList<>() {
@@ -50,7 +55,7 @@ public class AppTest {
         // assert
         assertArrayEquals(expectedResult.toArray(), actualResult.toArray());
     }
-*/
+
     @Test
     public void shouldGenerateRandomAttendanceList() {
         //arrange
